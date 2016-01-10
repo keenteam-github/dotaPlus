@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCellID" id="KGk-i7-Jjw" customClass="PlayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2PH-Jh-ubs">
+                        <rect key="frame" x="10" y="2" width="40" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Qdb-kk-HbL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-iD-SMa">
+                        <rect key="frame" x="60" y="12" width="120" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="QJR-c8-JNk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOm-mK-M5G">
+                        <rect key="frame" x="200" y="12" width="100" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="scB-E3-MAt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KOm-mK-M5G" firstAttribute="leading" secondItem="jfp-iD-SMa" secondAttribute="trailing" constant="20" id="0kl-JJ-LgO"/>
+                    <constraint firstAttribute="bottom" secondItem="jfp-iD-SMa" secondAttribute="bottom" constant="12" id="2GD-nL-0qG"/>
+                    <constraint firstAttribute="bottom" secondItem="KOm-mK-M5G" secondAttribute="bottom" constant="12" id="2ed-VV-F2a"/>
+                    <constraint firstAttribute="trailing" secondItem="KOm-mK-M5G" secondAttribute="trailing" constant="20" id="AgL-vU-DYF"/>
+                    <constraint firstItem="KOm-mK-M5G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="C5M-3B-z4V"/>
+                    <constraint firstItem="2PH-Jh-ubs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="LrW-OI-rXZ"/>
+                    <constraint firstAttribute="bottom" secondItem="2PH-Jh-ubs" secondAttribute="bottom" constant="2" id="khh-Wi-OaL"/>
+                    <constraint firstItem="jfp-iD-SMa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rRa-0X-hFs"/>
+                    <constraint firstItem="2PH-Jh-ubs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wYv-rn-lms"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="jfp-iD-SMa" id="DHd-80-4e1"/>
+                <outlet property="playerIDLabel" destination="KOm-mK-M5G" id="qr5-ks-oAQ"/>
+                <outlet property="playerImageView" destination="2PH-Jh-ubs" id="Zsv-ug-YnZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
